@@ -1,23 +1,20 @@
 ---
-const currentYear = new Date().getFullYear();
 ---
 
-<footer class="bg-gray-900 text-gray-300">
-  <div class="max-w-6xl mx-auto px-4 py-8 flex flex-col sm:flex-row items-center justify-between gap-4">
-    <p class="text-sm">
-      &copy; {currentYear} Precision Accounting. All rights reserved.
-    </p>
-    <ul class="flex items-center gap-6 text-sm">
-      <li>
-        <a href="/privacy" class="hover:text-white transition-colors">
+<footer class="bg-gray-900 text-white">
+  <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+    <div class="flex flex-col sm:flex-row justify-between items-center">
+      <p class="text-gray-400 text-sm">
+        &copy; {new Date().getFullYear()} Precision Accounting. All rights reserved.
+      </p>
+      <div class="flex space-x-6 mt-4 sm:mt-0">
+        <a href="/privacy" class="text-gray-400 hover:text-white text-sm transition-colors">
           Privacy Policy
         </a>
-      </li>
-      <li>
-        <a href="/terms" class="hover:text-white transition-colors">
+        <a href="/terms" class="text-gray-400 hover:text-white text-sm transition-colors">
           Terms of Service
         </a>
-      </li>
-    </ul>
+      </div>
+    </div>
   </div>
 </footer>
