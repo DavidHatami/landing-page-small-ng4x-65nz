@@ -8,8 +8,8 @@ interface Props {
 }
 
 const {
-  title = 'Clarity Accounting | Professional Accounting Services',
-  description = 'Clarity Accounting provides professional bookkeeping, tax preparation, and financial consulting services for small businesses and individuals.',
+  title = 'Precision Accounting | Expert Financial Services for Small Businesses',
+  description = 'Precision Accounting provides professional bookkeeping, tax preparation, and financial consulting services tailored for small businesses and entrepreneurs.'
 } = Astro.props;
 ---
 
@@ -28,7 +28,7 @@ const {
   </head>
   <body class="min-h-screen flex flex-col bg-white text-gray-900">
     <Nav />
-    <main class="flex-1">
+    <main class="flex-grow">
       <slot />
     </main>
     <Footer />
