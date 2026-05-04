@@ -8,8 +8,8 @@ interface Props {
 }
 
 const {
-  title = 'Clarity Accounting | Professional Accounting Services',
-  description = 'Expert accounting services for small businesses. Tax preparation, bookkeeping, and financial consulting to help your business thrive.',
+  title = 'Precision Accounting | Expert Financial Services for Small Businesses',
+  description = 'Professional accounting services tailored for small businesses. Tax preparation, bookkeeping, and financial consulting you can trust.'
 } = Astro.props;
 ---
 
@@ -23,11 +23,12 @@ const {
     <meta property="og:description" content={description} />
     <meta property="og:image" content="/og-image.png" />
     <meta property="og:type" content="website" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <title>{title}</title>
   </head>
-  <body class="min-h-screen flex flex-col bg-white text-gray-900">
+  <body class="min-h-screen flex flex-col">
     <Nav />
-    <main class="flex-1">
+    <main class="flex-grow">
       <slot />
     </main>
     <Footer />
