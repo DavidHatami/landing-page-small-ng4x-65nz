@@ -23,11 +23,12 @@ const {
     <meta property="og:description" content={description} />
     <meta property="og:image" content="/og-image.png" />
     <meta property="og:type" content="website" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <title>{title}</title>
   </head>
   <body class="min-h-screen flex flex-col bg-gray-50 text-gray-900">
     <Nav />
-    <main class="flex-1">
+    <main class="flex-grow">
       <slot />
     </main>
     <Footer />
