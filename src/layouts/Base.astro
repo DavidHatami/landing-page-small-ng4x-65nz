@@ -9,8 +9,10 @@ interface Props {
 
 const {
   title = 'Clarity Accounting | Professional Accounting Services',
-  description = 'Clarity Accounting provides professional bookkeeping, tax preparation, and financial consulting services for small businesses and individuals.',
+  description = 'Clarity Accounting provides expert bookkeeping, tax preparation, and financial consulting for small businesses and individuals. Clear numbers, clear future.',
 } = Astro.props;
+
+const ogImage = '/og-image.png';
 ---
 
 <!doctype html>
@@ -21,7 +23,7 @@ const {
     <meta name="description" content={description} />
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
-    <meta property="og:image" content="/og-image.png" />
+    <meta property="og:image" content={ogImage} />
     <meta property="og:type" content="website" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <title>{title}</title>
