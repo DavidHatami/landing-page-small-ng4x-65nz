@@ -9,7 +9,7 @@ interface Props {
 
 const {
   title = 'Precision Accounting | Expert Financial Services for Small Businesses',
-  description = 'Precision Accounting provides professional bookkeeping, tax preparation, and financial consulting services tailored for small businesses and entrepreneurs.',
+  description = 'Trusted accounting services for small businesses. Tax preparation, bookkeeping, and financial consulting to help your business thrive.',
 } = Astro.props;
 ---
 
@@ -26,7 +26,7 @@ const {
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <title>{title}</title>
   </head>
-  <body class="min-h-screen flex flex-col bg-gray-50 text-gray-900">
+  <body class="min-h-screen flex flex-col">
     <Nav />
     <main class="flex-1">
       <slot />
